@@ -9,7 +9,7 @@ source:
   sha256: 87389c71bdf690e05b72a5cd7dd2f4f7d8a8ac69b15f1481de1960e7740efc9f
 
 build:
-  number: 0
+  number: 1
   skip: True  # [win or py>30]
 
 requirements:
@@ -42,7 +42,7 @@ test:
 
 about:
   home: https://triqs.github.io/tprf
-  license: GPLv3
+  license: GPL-3.0-or-later
   license_family: GPL
   license_file: LICENSE.txt
   summary: 'The Two-Particle Response Function tool box for TRIQS'
