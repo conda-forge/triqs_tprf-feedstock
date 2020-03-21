@@ -24,17 +24,17 @@ requirements:
     - triqs {{ '.'.join(version.split('.')[:2]) }}
     - boost-cpp
     - fftw
-    - python
-    - openmpi
+    - {{ mpi }}
     - libblas
     - liblapack
+    - python
   run:
     - {{ pin_compatible("triqs", max_pin="x.x") }}
     - fftw
-    - python
-    - openmpi
+    - {{ mpi }}
     - libblas
     - liblapack
+    - python
 
 test:
   imports:
