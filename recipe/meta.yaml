@@ -1,4 +1,4 @@
-{% set version = "3.1.0" %}
+{% set version = "3.1.1" %}
 
 package:
   name: triqs_tprf
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/TRIQS/tprf/releases/download/{{ version }}/tprf-{{ version }}.tar.gz
-  sha256: 75f6e79d891342951652353ea4d9914074d9947c67cad60844ebaa3f82bd17b5
+  sha256: 63d4de9cfc3daf0d74db45cfa7445b817fd22a38a8485db3ce9a81febe263b50
 
 build:
   number: 0
