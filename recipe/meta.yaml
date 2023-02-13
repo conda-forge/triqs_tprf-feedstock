@@ -16,10 +16,8 @@ requirements:
   build:
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
-    - cmake
     - make
-    - llvm-openmp  # [osx]
-    - libgomp      # [linux]
+    - cmake
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - {{ mpi }}
@@ -28,6 +26,8 @@ requirements:
     - triqs {{ '.'.join(version.split('.')[:2]) }}
     - boost-cpp
     - fftw
+    - llvm-openmp  # [osx]
+    - libgomp      # [linux]
     - {{ mpi }}
     - libblas
     - liblapack
