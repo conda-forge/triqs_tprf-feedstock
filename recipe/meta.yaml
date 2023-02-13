@@ -22,6 +22,8 @@ requirements:
     - libgomp      # [linux]
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
+    - {{ mpi }}
+    - clangxx  # [osx]
   host:
     - triqs {{ '.'.join(version.split('.')[:2]) }}
     - boost-cpp
