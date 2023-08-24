@@ -13,7 +13,7 @@ mpiexec="mpiexec --allow-run-as-root"
 export CXXFLAGS="$CXXFLAGS -D_LIBCPP_DISABLE_AVAILABILITY"
 source $PREFIX/share/triqs/triqsvars.sh
 
-cmake \
+cmake ${CMAKE_ARGS} \
     -DCMAKE_INSTALL_PREFIX=$PREFIX \
     -DCMAKE_BUILD_TYPE=Release \
     ..
