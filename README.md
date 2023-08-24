@@ -1,11 +1,11 @@
-About triqs_tprf
-================
+About triqs_tprf-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/triqs_tprf-feedstock/blob/main/LICENSE.txt)
 
 Home: https://triqs.github.io/tprf
 
 Package license: GPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/triqs_tprf-feedstock/blob/main/LICENSE.txt)
 
 Summary: The Two-Particle Response Function tool box for TRIQS
 
