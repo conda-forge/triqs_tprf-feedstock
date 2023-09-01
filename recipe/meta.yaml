@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/TRIQS/tprf/releases/download/{{ version }}/tprf-{{ version }}.tar.gz
-  sha256: 1df841d2180d9c73437ad9e5fb9527dc45952a9fa992a63b8420d73313f3511d
+  sha256: 6c621175d0988b37d8fe823afbf27061e3aca504481a642dab2d715f14fa7ca7
 
 build:
   number: 0
