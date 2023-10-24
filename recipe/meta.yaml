@@ -24,6 +24,7 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - {{ mpi }}                              # [mpi == 'openmpi' and build_platform != target_platform]
+    - setuptools  # [py>=312]
   host:
     - triqs {{ '.'.join(version.split('.')[:2]) }}
     - libboost-headers
@@ -33,6 +34,7 @@ requirements:
     - liblapack
     - numpy
     - python
+    - setuptools  # [py>=312]
   run:
     - {{ pin_compatible("triqs", max_pin="x.x") }}
     - fftw
@@ -41,6 +43,7 @@ requirements:
     - liblapack
     - {{ pin_compatible("numpy") }}
     - python
+    - setuptools  # [py>=312]
 
 test:
   commands:
