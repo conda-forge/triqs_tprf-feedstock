@@ -26,7 +26,7 @@ cmake ${CMAKE_ARGS} \
     -DCMAKE_BUILD_TYPE=Release \
     ..
 
-make -j${CPU_COUNT} VERBOSE=1
+make -j1 VERBOSE=1
 
 if [[ "${CONDA_BUILD_CROSS_COMPILATION}" != "1" ]]; then
   CTEST_OUTPUT_ON_FAILURE=1 ctest

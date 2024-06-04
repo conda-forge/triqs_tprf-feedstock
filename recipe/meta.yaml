@@ -1,4 +1,4 @@
-{% set version = "3.2.1" %}
+{% set version = "3.3.0" %}
 
 package:
   name: triqs_tprf
@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://github.com/TRIQS/tprf/archive/refs/tags/{{ version }}.tar.gz
-  sha256: f1d4dd5986af4b37dc65f3af2a0be507455f0b4a74ea7d4de892739ccd86158c
+  sha256: e703b490873293efa2835147c73b19b90860fe2e2d8b1ec9da79c8b602512b10
 
 build:
-  number: 3
-  skip: true  # [win or py<30]
+  number: 0
+  skip: true  # [win or py<30 or (osx and x86_64)]
 
 requirements:
   build:
@@ -23,6 +23,7 @@ requirements:
     - libgomp      # [linux]
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
+    - {{ stdlib("c") }}
     - {{ mpi }}                              # [mpi == 'openmpi' and build_platform != target_platform]
     - setuptools  # [py>=312]
   host:
